@@ -1,6 +1,5 @@
-function isPalindrome(str) {
-  const reversed = str.split("").reverse().join("");
-  return str === reversed;
+function sayHi() {
+  console.log("Hi!");
 }
 
-console.log(isPalindrome("racecar")); // true
+setTimeout(sayHi, 2000); // Run sayHi after 2 seconds
