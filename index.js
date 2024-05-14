@@ -1,5 +1,9 @@
-function sayHi() {
-  console.log("Hi!");
+function isSubsequence(s, t) {
+  let i = 0;
+  let j = 0;
+  while (i < s.length && j < t.length) {
+    if (s[i] === t[j]) i++;
+    j++;
+  }
+  return i === s.length;
 }
-
-setTimeout(sayHi, 2000); // Run sayHi after 2 seconds
